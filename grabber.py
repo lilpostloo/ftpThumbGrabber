@@ -1,16 +1,14 @@
-# python C:\wamp64\www\apps\ftpThumbGrabber\grabber.py
+# python C:\wamp64\www\apps\lilpostloo\ftpThumbGrabber\grabber.py
 from pathlib import Path
 from ftplib import FTP
 import datetime
 import loginDetails
 
-print(loginDetails.username)
-
 
 local = "D:/camFootage/snaps/"
-camDetails = ["192.168.0.109","/IPCamera/C2_00626E830E4B/snap/"]
+#camDetails = ["192.168.0.109","/IPCamera/C2_00626E830E4B/snap/"]
 camDetails = ["192.168.0.107","/IPCamera/C2_00626E830EB6/snap/"]
-getDirDate = "20190516"
+getDirDate = "20190518"
   
 def run():
     camIp = camDetails[0]
@@ -61,5 +59,5 @@ def run():
     print('finished script')
 
 
-#run()
+run()
 
